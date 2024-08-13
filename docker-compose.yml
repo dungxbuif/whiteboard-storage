@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  excalidraw-storage-backend:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      STORAGE_URI: postgresql://postgres:+C?|H[vtrl*OSecX@dev-env_default:5432/postgres
+
+
